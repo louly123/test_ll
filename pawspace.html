@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PawSpace</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pawspace.css">
+</head>
+
+<body>
+
+<header>
+  <h1>PawSpace 🐾</h1>
+
+  <nav>
+    <a onclick="show('home')">Home</a>
+    <a onclick="show('services')">Services</a>
+    <a onclick="show('shop')">Shop</a>
+    <a onclick="show('gallery')">Gallery</a>
+    <a onclick="show('booking')">Booking</a>
+    <a onclick="show('feedback')">Feedback</a>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="page">
+  <div class="hero-title">
+  <h2>Welcome to <span>PawSpace</span> 🐾</h2>
+  <p>Your trusted pet care & shopping destination</p>
+</div>
+
+  <img class="home-img"
+    src="https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=1600&q=80">
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="page">
+  <h2>Our Services</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee">
+      <h3>Grooming</h3>
+      <div class="info">
+        Full wash, haircut, nail trimming<br>
+        💰 $25 - $40
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7">
+      <h3>Walking</h3>
+      <div class="info">
+        Daily exercise walks for pets<br>
+        💰 $10 per walk
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8">
+      <h3>Boarding</h3>
+      <div class="info">
+        Overnight safe pet care<br>
+        💰 $30 per night
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SHOP -->
+<
+<section id="shop" class="page">
+  <h2>Shop 🛍️</h2>
+
+  <div class="cards">
+
+    <!-- DOG FOOD -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1589927986089-35812388d1f4?auto=format&fit=crop&w=800&q=60" alt="Dog Food">
+      <h3>Dog Food</h3>
+      <div class="info">Healthy premium dog nutrition<br>💰 $15</div>
+    </div>
+
+    <!-- PET TOYS -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1601758174114-e711c0cbaa69?auto=format&fit=crop&w=800&q=60" alt="Pet Toys">
+      <h3>Pet Toys</h3>
+      <div class="info">Fun toys for dogs and cats<br>💰 $8</div>
+    </div>
+
+    <!-- PET BED -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1583337130417-0c4f4b4a3b3b?auto=format&fit=crop&w=800&q=60" alt="Pet Bed">
+      <h3>Pet Bed</h3>
+      <div class="info">Soft and comfortable sleeping bed<br>💰 $35</div>
+    </div>
+
+    <!-- CAT FOOD -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1604916287784-c324202b3205?auto=format&fit=crop&w=800&q=60" alt="Cat Food">
+      <h3>Cat Food</h3>
+      <div class="info">Nutritious food for cats<br>💰 $12</div>
+    </div>
+
+    <!-- PET SHAMPOO -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1612197527762-8cfb0c3d5c2c?auto=format&fit=crop&w=800&q=60" alt="Pet Shampoo">
+      <h3>Pet Shampoo</h3>
+      <div class="info">Gentle cleaning for pets<br>💰 $10</div>
+    </div>
+
+    <!-- LEASH & COLLAR -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8?auto=format&fit=crop&w=800&q=60" alt="Leash & Collar">
+      <h3>Leash & Collar</h3>
+      <div class="info">Strong and safe walking set<br>💰 $18</div>
+    </div>
+
+  </div>
+</section>
+<!-- GALLERY -->
+<section id="gallery" class="page">
+  <h2>Gallery</h2>
+
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b">
+    <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a">
+    <img src="https://images.unsplash.com/photo-1552053831-71594a27632d">
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="page">
+  <h2>Booking</h2>
+
+  <form>
+    <input type="text" placeholder="Your Name">
+    <input type="text" placeholder="Pet Name">
+
+    <select>
+      <option>Grooming</option>
+      <option>Walking</option>
+      <option>Boarding</option>
+    </select>
+
+    <input type="date">
+    <button>Confirm Booking</button>
+  </form>
+</section>
+
+<!-- FEEDBACK -->
+<section id="feedback" class="page">
+  <h2>Feedback</h2>
+
+  <form>
+    <input type="text" placeholder="Your Name">
+    <textarea placeholder="Write feedback"></textarea>
+    <button>Send</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 PawSpace
+</footer>
+
+<script>
+function show(id){
+  document.querySelectorAll(".page").forEach(p => p.style.display="none");
+  document.getElementById(id).style.display="block";
+}
+show("home");
+</script>
+<a href="https://wa.me/YOUR_NUMBER" target="_blank" class="whatsapp-btn">
+  💬 Contact us
+</a>
+
+</body>
+</html>
